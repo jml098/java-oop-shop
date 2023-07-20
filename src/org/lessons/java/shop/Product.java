@@ -13,6 +13,7 @@ public class Product {
 
     public Product() {
         this.code = new Random().nextInt(1, 100000000);
+        this.categories = new ArrayList<>();
     }
 
     public Product(String name, String description, double price, double vat, ArrayList<Category> categories) {
@@ -66,6 +67,10 @@ public class Product {
 
     public void setCategories(ArrayList<Category> categories) {
         this.categories = categories;
+    }
+
+    public void addCategory(Category category) {
+        this.categories.add(category);
     }
 
     public double getVatPrice() {
