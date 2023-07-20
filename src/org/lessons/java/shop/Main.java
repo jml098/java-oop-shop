@@ -34,6 +34,17 @@ public class Main {
             myProduct.setCategories(myProductCategories);
 
             System.out.println(myProduct.getProductName() + " has been added to your list.");
+            System.out.println();
+            System.out.println("***********************************");
+            System.out.println("Name: " + myProduct.getName());
+            System.out.println("Description: " + myProduct.getDescription());
+            System.out.println("Code: " + myProduct.getCode());
+            System.out.println("ProductName (Code-Name): " + myProduct.getProductName());
+            System.out.println("Categories: " + myProduct.getCategories());
+            System.out.println("Price: " + myProduct.getPrice() + "€");
+            System.out.println("Vat: " + myProduct.getVat() + "%");
+            System.out.println("***********************************");
+
 
             myProducts.add(myProduct);
 
